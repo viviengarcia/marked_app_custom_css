@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Typography FTW</title>
-	<link rel="stylesheet" href="vivien.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
 	<div id="wrapper">

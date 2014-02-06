@@ -18,10 +18,13 @@ $black: #181715;
 $lighter: #f3f2f0;
 $light: #b8b7b5;
 $grey: #888785;
-$dark: #585755;
+$dark: #766f5a;
 $darker: #4f4e4c;
+$darkest: rgba(57, 56, 54, 1.0);
 
 $action: #5876B2;
+
+$link: rgba(128, 51, 25, 1.0);
 
 .centered
 {
@@ -45,8 +48,10 @@ $action: #5876B2;
 
 html
 {
-	font-size: 62.5%;
+	// font-size: 62.5%;
+	font-size: 75%;
 }
+
 
 body
 {
@@ -54,7 +59,7 @@ body
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.6rem;
 	line-height: 1.5;
-	color: $darker;
+	color: $darkest;
 	background-color: $lighter;
 	// background: -webkit-repeating-linear-gradient( -90deg, $lighter, $lighter 23px, $action 24px);
     background-size: 100% 24px;
@@ -62,9 +67,10 @@ body
 
 #wrapper
 {
-	width: 67rem;
-	-webkit-font-smoothing: subpixel-antialiased;
-	@extend .centered;
+	width: 53rem;
+	margin: 0 auto!important;
+	// -webkit-font-smoothing: subpixel-antialiased;
+	// @extend .centered;
 }
 
 li:first-child
@@ -112,7 +118,7 @@ h1,h2,h3,h4,h5,h6
 	font-weight: bold;
 	/*-webkit-font-smoothing: subpixel-antialiased;*/
 	cursor: text;
-	color: $dark;
+	color: $darker;
 }
 
 h1
@@ -187,12 +193,18 @@ hr
 a
 {
 	color: $dark;
+	// color: $link;
 	text-decoration: none;
 }
 a:hover
 {
 	color: $grey;
 	text-decoration: underline;
+}
+
+a:visited
+{
+	color: $link;
 }
 
 #wrapper>*:first-child
