@@ -1,0 +1,762 @@
+/*
+This document has been created with Marked.app <http://markedapp.com>, Copyright 2013 Brett Terpstra
+Content is property of the document author
+Please leave this notice in place, along with any additional credits below.
+---------------------------------------------------------------
+Title: VivienGarcia
+Author: Vivien Garcia
+Description:
+
+
+*/
+/* Helpers */
+/* line 27, vivien.scss */
+.centered, #wrapper {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* switching box model for all elements */
+/* line 34, vivien.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 41, vivien.scss */
+*:not('#mkdbuttons') {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 47, vivien.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 52, vivien.scss */
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #4f4e4c;
+  background-color: #f3f2f0;
+  background-size: 100% 24px;
+}
+
+/* line 64, vivien.scss */
+#wrapper {
+  width: 67rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* line 71, vivien.scss */
+li:first-child {
+  margin-top: 0;
+}
+
+/* line 76, vivien.scss */
+p, pre, blockquote {
+  margin: 2.4rem 0 0;
+}
+
+/* you shall not pass */
+/* line 86, vivien.scss */
+p, textarea, table, td, th, code, pre, samp {
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
+/* line 95, vivien.scss */
+strong {
+  color: #4f4e4c;
+}
+
+/* line 100, vivien.scss */
+h1 + p, h2 + p {
+  font-weight: 300;
+}
+
+/* line 105, vivien.scss */
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+  margin-top: 0;
+}
+
+/* line 110, vivien.scss */
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  font-weight: bold;
+  /*-webkit-font-smoothing: subpixel-antialiased;*/
+  cursor: text;
+  color: #585755;
+}
+
+/* line 119, vivien.scss */
+h1 {
+  margin: 4.8rem 0 0;
+  line-height: 1.6;
+  font-size: 3rem;
+}
+
+/* line 132, vivien.scss */
+h2 {
+  margin: 2.4rem 0 0;
+  line-height: 1.98;
+  border-bottom: 1px solid #b8b7b5;
+  font-size: 2.4rem;
+}
+
+/* line 140, vivien.scss */
+h3 {
+  margin: 2.4rem 0 0;
+  line-height: 1.35;
+  font-size: 1.8rem;
+}
+
+/* line 147, vivien.scss */
+h4 {
+  margin: .3rem 0 0;
+  line-height: 1.2;
+  font-size: 18px;
+}
+
+/* line 154, vivien.scss */
+h5 {
+  margin: 0;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+/* line 161, vivien.scss */
+h6 {
+  margin: 0;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+/* line 168, vivien.scss */
+ul, ol {
+  padding-left: 3.4rem;
+  margin-top: 0;
+}
+
+/* line 174, vivien.scss */
+ol li ul:first-of-type {
+  margin-top: 0;
+}
+
+/* line 179, vivien.scss */
+hr {
+  border: 0 none;
+  color: #ccc;
+  height: 4px;
+  padding: 0;
+}
+
+/* line 188, vivien.scss */
+a {
+  color: #585755;
+  text-decoration: none;
+}
+
+/* line 193, vivien.scss */
+a:hover {
+  color: #888785;
+  text-decoration: underline;
+}
+
+/* line 199, vivien.scss */
+#wrapper > *:first-child {
+  margin-top: 0 !important;
+  padding-top: 2.4rem;
+}
+
+/* line 205, vivien.scss */
+#wrapper > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* line 218, vivien.scss */
+li > :first-child {
+  margin-top: 0;
+}
+
+/* line 223, vivien.scss */
+dl {
+  padding: 0;
+}
+
+/* line 228, vivien.scss */
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+/* line 237, vivien.scss */
+dl dt:first-child {
+  padding: 0;
+}
+
+/* line 242, vivien.scss */
+dl dt > :first-child {
+  margin-top: 0;
+}
+
+/* line 247, vivien.scss */
+dl dt > :last-child {
+  margin-bottom: 0;
+}
+
+/* line 252, vivien.scss */
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+/* line 258, vivien.scss */
+dl dd > :first-child {
+  margin-top: 0;
+}
+
+/* line 263, vivien.scss */
+dl dd > :last-child {
+  margin-bottom: 0;
+}
+
+/* line 268, vivien.scss */
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+/* line 275, vivien.scss */
+blockquote > :first-child {
+  margin-top: 0;
+}
+
+/* line 280, vivien.scss */
+blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+/* line 285, vivien.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+/* line 293, vivien.scss */
+table th {
+  font-weight: bold;
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+/* line 300, vivien.scss */
+table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+/* line 306, vivien.scss */
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+/* line 312, vivien.scss */
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* line 317, vivien.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 322, vivien.scss */
+code, tt {
+  display: inline-block;
+  padding: 0 5px;
+  border: 1px solid #d8d8d7;
+  margin: 0 2px;
+  border-radius: 3px;
+  line-height: 1.2;
+  font-family: 'Source Code Pro', Menlo, Consolas,'Liberation Mono',Courier,monospace;
+  font-weight: 500;
+  white-space: nowrap;
+  text-indent: 0;
+  background-color: #f5f4f3;
+}
+
+/* line 337, vivien.scss */
+pre > code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: 0;
+  background: transparent;
+}
+
+/* line 346, vivien.scss */
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+/* line 357, vivien.scss */
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+/* line 368, vivien.scss */
+pre code, pre tt {
+  background-color: transparent;
+  border: 0;
+}
+
+/* line 374, vivien.scss */
+.poetry pre {
+  font-family: Georgia, Garamond, serif !important;
+  font-style: italic;
+  font-size: 110% !important;
+  line-height: 1.6em;
+  display: block;
+  margin-left: 1em;
+}
+
+/* line 384, vivien.scss */
+.poetry pre code {
+  font-family: Georgia, Garamond, serif !important;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  white-space: pre-wrap;
+}
+
+/* line 395, vivien.scss */
+sup, sub, a.footnote {
+  font-size: 1.4ex;
+  height: 0;
+  line-height: 1;
+  vertical-align: super;
+  position: relative;
+}
+
+/* line 404, vivien.scss */
+sub {
+  vertical-align: sub;
+  top: -1px;
+}
+
+@media print {
+  /* line 412, vivien.scss */
+  body {
+    background: #fff;
+  }
+
+  /* line 417, vivien.scss */
+  img, pre, blockquote, table, figure {
+    page-break-inside: avoid;
+  }
+
+  /* line 422, vivien.scss */
+  #wrapper {
+    background: #fff;
+    border: 0;
+  }
+
+  /* line 428, vivien.scss */
+  code {
+    background-color: #fff;
+    color: #333333 !important;
+    padding: 0 .2em;
+    border: 1px solid #dedede;
+  }
+
+  /* line 436, vivien.scss */
+  pre {
+    background: #fff;
+  }
+
+  /* line 441, vivien.scss */
+  pre code {
+    background-color: white !important;
+    overflow: visible;
+  }
+}
+@media screen {
+  /* line 450, vivien.scss */
+  body.inverted {
+    color: #eeeeee !important;
+    border-color: #555;
+    box-shadow: none;
+  }
+
+  /* line 457, vivien.scss */
+  .inverted #wrapper, .inverted hr .inverted p, .inverted td, .inverted li, .inverted h1, .inverted h2, .inverted h3, .inverted h4, .inverted h5, .inverted h6, .inverted th, .inverted .math, .inverted caption, .inverted dd, .inverted dt, .inverted blockquote {
+    color: #eeeeee !important;
+    border-color: #555;
+    box-shadow: none;
+  }
+
+  /* line 464, vivien.scss */
+  .inverted td, .inverted th {
+    background: #333;
+  }
+
+  /* line 469, vivien.scss */
+  .inverted h2 {
+    border-color: #555;
+  }
+
+  /* line 474, vivien.scss */
+  .inverted hr {
+    border-color: #777;
+    border-width: 1px !important;
+  }
+
+  /* line 480, vivien.scss */
+  ::selection {
+    background: rgba(157, 193, 200, 0.5);
+  }
+
+  /* line 485, vivien.scss */
+  h1::selection {
+    background-color: rgba(45, 156, 208, 0.3);
+  }
+
+  /* line 490, vivien.scss */
+  h2::selection {
+    background-color: rgba(90, 182, 224, 0.3);
+  }
+
+  /* line 495, vivien.scss */
+  h3::selection, h4::selection, h5::selection, h6::selection, li::selection, ol::selection {
+    background-color: rgba(133, 201, 232, 0.3);
+  }
+
+  /* line 500, vivien.scss */
+  code::selection {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #eee;
+  }
+
+  /* line 506, vivien.scss */
+  code span::selection {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    color: #eeeeee !important;
+  }
+
+  /* line 512, vivien.scss */
+  a::selection {
+    background-color: rgba(255, 230, 102, 0.2);
+  }
+
+  /* line 517, vivien.scss */
+  .inverted a::selection {
+    background-color: rgba(255, 230, 102, 0.6);
+  }
+
+  /* line 522, vivien.scss */
+  td::selection, th::selection, caption::selection {
+    background-color: rgba(180, 237, 95, 0.5);
+  }
+
+  /* line 527, vivien.scss */
+  .inverted {
+    background: #0b2531;
+    background: #252a2a;
+  }
+
+  /* line 533, vivien.scss */
+  .inverted #wrapper {
+    background: #252a2a;
+  }
+
+  /* line 538, vivien.scss */
+  .inverted a {
+    color: #acd1d5;
+  }
+}
+/* line 544, vivien.scss */
+.highlight .c {
+  color: #998;
+  font-style: italic;
+}
+
+/* line 550, vivien.scss */
+.highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+
+/* line 556, vivien.scss */
+.highlight .k, .highlight .o {
+  font-weight: bold;
+}
+
+/* line 561, vivien.scss */
+.highlight .cm {
+  color: #998;
+  font-style: italic;
+}
+
+/* line 567, vivien.scss */
+.highlight .cp {
+  color: #999;
+  font-weight: bold;
+}
+
+/* line 573, vivien.scss */
+.highlight .c1 {
+  color: #998;
+  font-style: italic;
+}
+
+/* line 579, vivien.scss */
+.highlight .cs {
+  color: #999;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* line 586, vivien.scss */
+.highlight .gd {
+  color: #000;
+  background-color: #fdd;
+}
+
+/* line 592, vivien.scss */
+.highlight .gd .x {
+  color: #000;
+  background-color: #faa;
+}
+
+/* line 598, vivien.scss */
+.highlight .ge {
+  font-style: italic;
+}
+
+/* line 603, vivien.scss */
+.highlight .gr {
+  color: #a00;
+}
+
+/* line 608, vivien.scss */
+.highlight .gh {
+  color: #999;
+}
+
+/* line 613, vivien.scss */
+.highlight .gi {
+  color: #000;
+  background-color: #dfd;
+}
+
+/* line 619, vivien.scss */
+.highlight .gi .x {
+  color: #000;
+  background-color: #afa;
+}
+
+/* line 625, vivien.scss */
+.highlight .go {
+  color: #888;
+}
+
+/* line 630, vivien.scss */
+.highlight .gp {
+  color: #555;
+}
+
+/* line 635, vivien.scss */
+.highlight .gs {
+  font-weight: bold;
+}
+
+/* line 640, vivien.scss */
+.highlight .gu {
+  color: #800080;
+  font-weight: bold;
+}
+
+/* line 646, vivien.scss */
+.highlight .gt {
+  color: #a00;
+}
+
+/* line 651, vivien.scss */
+.highlight .kc, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr {
+  font-weight: bold;
+}
+
+/* line 656, vivien.scss */
+.highlight .kt {
+  color: #458;
+  font-weight: bold;
+}
+
+/* line 662, vivien.scss */
+.highlight .m {
+  color: #099;
+}
+
+/* line 667, vivien.scss */
+.highlight .s {
+  color: #d14;
+}
+
+/* line 672, vivien.scss */
+.highlight .na {
+  color: #008080;
+}
+
+/* line 677, vivien.scss */
+.highlight .nb {
+  color: #0086b3;
+}
+
+/* line 682, vivien.scss */
+.highlight .nc {
+  color: #458;
+  font-weight: bold;
+}
+
+/* line 688, vivien.scss */
+.highlight .no {
+  color: #008080;
+}
+
+/* line 693, vivien.scss */
+.highlight .ni {
+  color: #800080;
+}
+
+/* line 698, vivien.scss */
+.highlight .ne, .highlight .nf {
+  color: #900;
+  font-weight: bold;
+}
+
+/* line 704, vivien.scss */
+.highlight .nn {
+  color: #555;
+}
+
+/* line 709, vivien.scss */
+.highlight .nt {
+  color: #000080;
+}
+
+/* line 714, vivien.scss */
+.highlight .nv {
+  color: #008080;
+}
+
+/* line 719, vivien.scss */
+.highlight .ow {
+  font-weight: bold;
+}
+
+/* line 724, vivien.scss */
+.highlight .w {
+  color: #bbb;
+}
+
+/* line 729, vivien.scss */
+.highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo {
+  color: #099;
+}
+
+/* line 734, vivien.scss */
+.highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx {
+  color: #d14;
+}
+
+/* line 739, vivien.scss */
+.highlight .sr {
+  color: #009926;
+}
+
+/* line 744, vivien.scss */
+.highlight .s1 {
+  color: #d14;
+}
+
+/* line 749, vivien.scss */
+.highlight .ss {
+  color: #990073;
+}
+
+/* line 754, vivien.scss */
+.highlight .bp {
+  color: #999;
+}
+
+/* line 759, vivien.scss */
+.highlight .vc, .highlight .vg, .highlight .vi {
+  color: #008080;
+}
+
+/* line 764, vivien.scss */
+.highlight .il {
+  color: #099;
+}
+
+/* line 769, vivien.scss */
+.highlight .gc {
+  color: #999;
+  background-color: #eaf2f5;
+}
+
+/* line 775, vivien.scss */
+.type-csharp .highlight .k, .type-csharp .highlight .kt {
+  color: #00F;
+}
+
+/* line 780, vivien.scss */
+.type-csharp .highlight .nf {
+  color: #000;
+  font-weight: normal;
+}
+
+/* line 786, vivien.scss */
+.type-csharp .highlight .nc {
+  color: #2b91af;
+}
+
+/* line 791, vivien.scss */
+.type-csharp .highlight .nn {
+  color: #000;
+}
+
+/* line 796, vivien.scss */
+.type-csharp .highlight .s, .type-csharp .highlight .sc {
+  color: #a31515;
+}
